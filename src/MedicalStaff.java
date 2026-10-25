@@ -19,4 +19,6 @@ public abstract class MedicalStaff {
         System.out.println("Department: " + department);
         System.out.println("Working Hours: " + workingHours + " hours per week");
     }
+
+    public abstract void performDuties();
 }
