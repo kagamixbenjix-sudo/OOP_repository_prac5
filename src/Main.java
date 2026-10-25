@@ -11,5 +11,12 @@ public class Main {
         team[1] = new Nurse("Namukasa Rose", "EMP002", "Maternity", 45, "Maternity Ward");
         team[2] = new Pharmacist("Mugisha Peter", "EMP003", "Pharmacy", 40, "Outpatient Pharmacy");
         team[3] = new LabTechnician("Achieng Grace", "EMP004", "Laboratory", 42, "Haematology");
+
+        System.out.println("--- Staff information and duties ---");
+        for (MedicalStaff member : team) {
+            member.displayStaffInfo();
+            member.performDuties();
+            System.out.println("----------------------------");
+        }
     }
 }
